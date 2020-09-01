@@ -1,0 +1,180 @@
+{
+    "version": "0.8.2",
+    "unity": {
+        "scripts": {
+            "excludes": [
+                "**/Editor/",
+                "**/Luna/RuntimeScripts/"
+            ],
+            "useMSBuild": true,
+            "msbuildMac64": "/Library/Frameworks/Mono.framework/Versions/Current/bin/msbuild",
+            "msbuildWin64": "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/MSBuild.exe",
+            "externalSources": [],
+            "scriptingDefines": []
+        },
+        "assets": {
+            "export": [
+                "all"
+            ],
+            "excludes": [
+                "**/Editor/"
+            ],
+            "includes": []
+        },
+        "scenes": [
+            "Assets/Scenes/SampleScene.unity"
+        ],
+        "startupScene": 0,
+        "packages": {
+            "default": {
+                "applicationName": "",
+                "iosLink": "",
+                "androidLink": "",
+                "orientation": "unspecified",
+                "supportedLanguages": [
+                    "en"
+                ]
+            },
+            "ironsource": {
+                "applicationGenre": "",
+                "versionName": "",
+                "apiType": 1,
+                "playableMode": 0,
+                "packageType": 0
+            },
+            "facebook": {
+                "assetID": "",
+                "packageType": 0
+            }
+        },
+        "preloader": {
+            "active": true,
+            "icon": "",
+            "background": ""
+        },
+        "autoInstantiatePrefabs": true,
+        "removeShadows": false,
+        "minify": true,
+        "compressResources": false,
+        "compressType": 0,
+        "eliminateDeadCode": false,
+        "genericCheck": false,
+        "disableAntiAliasing": false,
+        "roots": [
+            "UnityEngine.Physics",
+            "UnityEngine.EventSystems.PointerEventData",
+            "UnityEngine.UI.GraphicRaycaster",
+            "LunaUnity.Objects.Handlers.Base",
+            "UnityEngine.UI.RawImage",
+            "UnityEngine.UI.Image",
+            "UnityEngine.UI.Text",
+            "UnityEngine.CanvasGroup",
+            "Luna.Unity.Playable",
+            "UnityEngine.Time",
+            "UnityEngine.LayerMask",
+            "UnityEngine.SceneManagement.LoadSceneMode",
+            "UnityEngine.LightmapSettings",
+            "UnityEngine.EventSystems.IPointerEnterHandler",
+            "UnityEngine.EventSystems.IPointerExitHandler",
+            "UnityEngine.EventSystems.IPointerDownHandler",
+            "UnityEngine.EventSystems.IPointerUpHandler",
+            "UnityEngine.EventSystems.IPointerClickHandler",
+            "UnityEngine.EventSystems.IScrollHandler",
+            "UnityEngine.EventSystems.IBeginDragHandler",
+            "UnityEngine.EventSystems.IDragHandler",
+            "UnityEngine.EventSystems.IEndDragHandler",
+            "UnityEngine.RigidbodyConstraints2D",
+            "UnityEngine.RigidbodyType2D",
+            "UnityEngine.Collision2D",
+            "UnityEngine.Rendering.CompareFunction",
+            "Luna.Unity.DTO.UnityEngine.Assets.Shader+ShaderParameterType",
+            "UnityEngine.Rendering.CullMode",
+            "UnityEngine.Rendering.BlendMode",
+            "UnityEngine.Rendering.BlendOp",
+            "UnityEngine.TextAsset",
+            "UnityEngine.Rendering.StencilOp",
+            "TMPro._HorizontalAlignmentOptions",
+            "TMPro.TagUnits"
+        ],
+        "stubberData": {
+            "SDKName": "",
+            "Namespace": "",
+            "className": "",
+            "generateInternals": false
+        },
+        "playerPrefs": true
+    },
+    "assets": {
+        "rules": {
+            "texture": {
+                "default": {
+                    "maxWidth": 2048,
+                    "maxHeight": 2048,
+                    "format": "default",
+                    "compression": "none",
+                    "quality": 80,
+                    "script": "",
+                    "ext": ""
+                },
+                "overrides": []
+            },
+            "sound": {
+                "default": {
+                    "channels": 0,
+                    "bitrate": 0,
+                    "script": "",
+                    "ext": ""
+                },
+                "overrides": []
+            },
+            "font": {
+                "default": {
+                    "data": {
+                        "alphabet": " §1234567890-=qwertyuiop[]asdfghjkl;'\\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:\"|~ZXCVBNM<>?",
+                        "size": 128
+                    }
+                },
+                 "overrides": [
+                    {
+                        "data": {
+                            "alphabet": " §1234567890-=qwertyuiop[]asdfghjkl;‘\\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:\"|~ZXCVBNM<>?安裝點住以潛行等級完成竊取珠寶點擊以跳起點擊以開始遊戲現在遊玩跳得真棒！新最佳成績新的最長距離加速獲得最高分！現在按下以使用噴氣背包加速您可以跑多远？完美很好不錯成功您獲勝了！安裝有罪捉拿罪犯！您能幫忙扭轉局勢並抓住主犯嗎？畫出罪犯 ",
+                            "size": 64
+                        },
+                        "name": "SourceHanSerifTC-SemiBold"
+                    },
+                    {
+                        "data": {
+                            "alphabet": " §1234567890-=qwertyuiop[]asdfghjkl;‘\\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:\"|~ZXCVBNM<>?点击以跳跃点击以开始现在游玩优美的跳跃！安装躲开警察！躲开并漂移！点击转向！千万别被逮住！安装新的最佳成绩新的最佳距离推进再创高分！现在点击以推进喷气背包您可以跑多遠？完美很好不错成功您获胜了！",
+                            "size": 64
+                        },
+                        "name": "SourceHanSerifSC-SemiBold"
+                    }
+                     ]
+                    
+            },
+            "shader": {
+                "default": {
+                    "data": {
+                        "programs": [],
+                        "passes": [],
+                        "vp": [],
+                        "fp": []
+                    }
+                },
+                "overrides": []
+            },
+            "meshes": {
+                "default": {
+                    "halfPrecision": false
+                },
+                "overrides": []
+            },
+            "animations": {
+                "default": {
+                    "halfPrecision": false
+                },
+                "overrides": []
+            }
+        }
+    }
+}
