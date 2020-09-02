@@ -8,20 +8,27 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance { get; private set; }
-
+    
+    
+    public Animator anim;
+    
+    [Header("---- Data Container ----")]
     public ScriptableUIData endData;
 
-    public Animator anim;
-
+    [Header("---- Texts ----")]
+    public Text greet_Text;
+    
+    [Header("---- TMP Texts ----")]
     public TextMeshProUGUI start_Text;
     public TextMeshProUGUI winText_TMP;
     public TextMeshProUGUI label_Text_TMP;
     public TextMeshProUGUI install_Btn_Text_TMP;
-
-
+    
+    [Header("---- Image/Sprites ----")]
     public Image profile;
     public Image button_install;
-
+    
+    [Header("---- Other ----")]
     public GameObject end;
     public GameObject start;
 
@@ -32,10 +39,11 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        //start
+        //StartPanel data assignment 
+        greet_Text.text = endData.greetingText;
         start_Text.text = endData.startInstruction;
 
-        //Endcard
+        //EndPanel data assignment
         winText_TMP.text = endData.endCardWin_Text;
         label_Text_TMP.text = endData.endCardLabel_text;
 

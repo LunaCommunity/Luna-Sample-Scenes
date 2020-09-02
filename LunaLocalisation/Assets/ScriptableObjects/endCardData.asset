@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90341ee5a76834a6f91a5d2d8421490e, type: 3}
   m_Name: endCardData
   m_EditorClassIdentifier: 
-  InstallCTA: 
+  greetingText: Welcome!
   startInstruction: Tap To Start
   install_CTA_BTN: Install
   endCardWin_Text: You win!

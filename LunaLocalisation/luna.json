@@ -22,7 +22,7 @@
             "includes": []
         },
         "scenes": [
-            "Assets/Scenes/SampleScene.unity"
+            "Assets/Scenes/TutorialFTUE.unity"
         ],
         "startupScene": 0,
         "packages": {
@@ -134,7 +134,7 @@
                         "size": 128
                     }
                 },
-                 "overrides": [
+                "overrides": [
                     {
                         "data": {
                             "alphabet": " §1234567890-=qwertyuiop[]asdfghjkl;‘\\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:\"|~ZXCVBNM<>?安裝點住以潛行等級完成竊取珠寶點擊以跳起點擊以開始遊戲現在遊玩跳得真棒！新最佳成績新的最長距離加速獲得最高分！現在按下以使用噴氣背包加速您可以跑多远？完美很好不錯成功您獲勝了！安裝有罪捉拿罪犯！您能幫忙扭轉局勢並抓住主犯嗎？畫出罪犯 ",
@@ -149,8 +149,7 @@
                         },
                         "name": "SourceHanSerifSC-SemiBold"
                     }
-                     ]
-                    
+                ]
             },
             "shader": {
                 "default": {

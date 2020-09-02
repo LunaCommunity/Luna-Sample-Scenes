@@ -7,10 +7,12 @@ using UnityEngine;
 public class ScriptableUIData : ScriptableObject
 {
     
-    [Header(("Game start UI settings"), order = 0 )]
+    [Header(("Game start UI settings"))]
+    public string greetingText;
     public string startInstruction;
     
-    [Header(("End Card UI Settings"), order = 1)]
+    
+    [Header(("End Card UI Settings"))]
     public string install_CTA_BTN;
     public string endCardWin_Text;
     public string endCardLabel_text;

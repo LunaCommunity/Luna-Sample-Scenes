@@ -6,14 +6,22 @@ using UnityEngine.UI;
 
 public class LanguageSettings : MonoBehaviour
 {
-    //Add any texts from inspector you want the fonts for changed.
-    public TextMeshProUGUI[] endCardTexts;
+    //Add TMP / texts to populate the arrays from inspector you want to change fonts.
+   [Header("---- UI TMP Texts ----")]
+    public TextMeshProUGUI[] UI_TMP;
+    
+    [Header("---- UI Texts ----")]
+    public Text[] UI_Text;
 
     void Start()
     {
-        for (int i = 0; i < endCardTexts.Length; i++)
+        for (int i = 0; i < UI_TMP.Length; i++)
         {
-            endCardTexts[i].font = FontChanger.instance.GetFont();
+            UI_TMP[i].font = FontChanger.instance.GetFontTMP();
+        }
+        for (int i = 0; i < UI_Text.Length; i++)
+        {
+            UI_Text[i].font = FontChanger.instance.GetFontText();
         }
     }
     
