@@ -22,6 +22,6 @@ public class ScriptableUIData : ScriptableObject
 
 }
 /*
-Add and remove data from here to be referenced in the UI Manager.
-The data can be initialised from the inspector.
+Add and remove fields from here to be referenced in the UI Manager.
+The fields can be assigned from the inspector.
 */

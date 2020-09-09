@@ -8,7 +8,7 @@ public class LanguageSettings : MonoBehaviour
 {
     //Add TMP / texts to populate the arrays from inspector you want to change fonts.
    [Header("---- UI TMP Texts ----")]
-    public TextMeshProUGUI[] UI_TMP;
+    public TMP_Text[] UI_TMP;
     
     [Header("---- UI Texts ----")]
     public Text[] UI_Text;

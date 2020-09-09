@@ -1,5 +1,5 @@
 {
-    "version": "0.8.2",
+    "version": "0.8.3",
     "unity": {
         "scripts": {
             "excludes": [
@@ -14,12 +14,16 @@
         },
         "assets": {
             "export": [
-                "all"
+                "scenes",
+                "resources"
             ],
             "excludes": [
                 "**/Editor/"
             ],
-            "includes": []
+            "includes": [
+                "Assets/TextMesh Pro/Resources/TMP Settings.asset",
+                "Assets/Fonts/SourceHanSerifJ-SemiBoldTest.asset"
+            ]
         },
         "scenes": [
             "Assets/Scenes/TutorialFTUE.unity"
@@ -148,6 +152,13 @@
                             "size": 64
                         },
                         "name": "SourceHanSerifSC-SemiBold"
+                    },
+                    {
+                        "data": {
+                            "alphabet": " §1234567890-=qwertyuiop[]asdfghjkl;'\\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:\"|~ZXCVBNM<>?タップしてジャンプタップしてスタート今すぐプレイ素晴らしいジャンプだ！新記録最長距離新記録ブーストハイスコアを更新しよう！さあ、押してジェットパックをブーストどこまでいけるかな？完璧なスゴイいい調子勝利！",
+                            "size": 64
+                        },
+                        "name": "Assets/Fonts/SourceHanSerifJ-SemiBold.otf"
                     }
                 ]
             },
