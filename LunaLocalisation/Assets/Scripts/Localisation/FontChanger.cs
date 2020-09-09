@@ -8,7 +8,7 @@ public class FontChanger : MonoBehaviour
     public static FontChanger instance;
 
     [SerializeField]
-    // [LunaPlaygroundField("Fonts", 0, "Font Settings")]
+    // [LunaPlaygroundField("Fonts", 0, "Font Settings")] //Un-comment once you have Luna installed to make this available in Playground
     private FontsTypes FontSelection;
     
 /*
