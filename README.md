@@ -7,3 +7,5 @@ Please refer to our knowledge bases for more information or questions:
 Documentation: https://docs.lunalabs.io/
 
 Community forum: https://community.lunalabs.io/
+
+![](endless.gif)
