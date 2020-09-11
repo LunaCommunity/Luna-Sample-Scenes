@@ -9,4 +9,11 @@ Please make sure to review the README.md files within each branch for instructio
 Please refer to our knowledge bases for more information or questions:
 
 Documentation: https://docs.lunalabs.io/
+
 Community forum: https://community.lunalabs.io/
+
+Samples Index:
+
+Luna Essentials - Endcard UI / Particle pack, tutorial animations, Localisation scripts.
+
+Texture Swapping - Three scenes with different brushes and particle system used to swap textures. (Texture to another texture, Texture Invisible & particle spray can texture swap)
