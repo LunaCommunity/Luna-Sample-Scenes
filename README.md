@@ -12,10 +12,10 @@ Documentation: https://docs.lunalabs.io/
 
 Community forum: https://community.lunalabs.io/
 
-Samples Index:
+## Samples Index
 
-Luna Essentials - Endcard UI / Particle pack, tutorial animations, Localisation scripts.
+**Luna Essentials** - Endcard UI / Particle pack, tutorial animations, Localisation scripts.
 
-Texture Swapping - Three scenes with different brushes and particle system used to swap textures. (Texture to another texture, Texture Invisible & particle spray can texture swap)
+**Texture Swapping** - Three scenes with different brushes and particle system used to swap textures. (Texture to another texture, Texture Invisible & particle spray can texture swap)
 
-Endless Runner - One scene setup with a camera controller and Platform manager which controls the endless string of platforms, contains one prefab called "Platform".
+**Endless Runner** - One scene setup with a camera controller and Platform manager which controls the endless string of platforms, contains one prefab called "Platform".
