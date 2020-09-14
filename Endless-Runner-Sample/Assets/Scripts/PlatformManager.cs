@@ -7,6 +7,8 @@ public class PlatformManager : MonoBehaviour
     /// Add the prefab for your road into the platform field
     /// z_offset will determine the first platform position distance from the end of the initially instantiated prefabs from platforms
     /// platformSizeZ - this need to be set to the z scale size of the platform you want repeated.
+    /// platforms - Queue that contains all instantiated platforms except for the currentPlatform
+    /// currentPlatform - this is the platform that is closest to the camera
     /// </summary>
     [SerializeField] private Platform platform = null;
     [SerializeField] private CameraMove playerCamera = null;
@@ -16,8 +18,12 @@ public class PlatformManager : MonoBehaviour
     [SerializeField] private int platformSizeZ = 20;
 
     private Queue<Platform> platforms = new Queue<Platform>();
-    private Platform popped = null;
+    private Platform currentPlatform = null;
 
+    /// <summary>
+    /// Instantiates the platforms and assigns required references
+    /// Adds each platform to the platforms queue
+    /// </summary>
     void Start()
     {
         for (int i = 0; i < platformCount; i++)
@@ -28,18 +34,24 @@ public class PlatformManager : MonoBehaviour
             platforms.Enqueue(_platform);
             z_Offset += platformSizeZ;
         }
-        popped = platforms.Dequeue();
+        // Assign the currentPlatform to the first in the queue 
+        currentPlatform = platforms.Dequeue();
     }
 
     void Update()
     {
-        if (popped.CheckPosition())
+        if (currentPlatform.CheckPosition())
         {
-            platforms.Enqueue(popped);
-            popped = platforms.Dequeue();
+            //If CheckPosition succeeds, Enqueue the currentPlatform to add it to the back of the queue
+            //Then Dequeue the next platform and assign it to currentPlatform to allow for .CheckPosition to be called on the new currentPlatform
+            platforms.Enqueue(currentPlatform);
+            currentPlatform = platforms.Dequeue();
         }
     }
     
+    /// <summary>
+    /// Called when the currentPlatform is behind the camera to move it to the end of the platforms
+    /// </summary>
     public void PlatformReset(GameObject _platform)
     {
         _platform.transform.position = new Vector3(0, 0, z_Offset);

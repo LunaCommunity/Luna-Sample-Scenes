@@ -4,7 +4,9 @@ public class Platform : MonoBehaviour
 {
 
     /// <summary>
-    /// Modify this value if the platform moves whilst still in the camera view frustum 
+    /// Modify this value if the platform moves whilst still in the camera view frustum
+    /// 
+    /// platformManager and playerCamera are references assigned when the platform is instantiated
     /// </summary>
     [SerializeField] private float positionOffset = 10;
     
@@ -21,7 +23,7 @@ public class Platform : MonoBehaviour
     }
 
     /// <summary>
-    /// Called from the platformManager
+    /// Called from the platformManager to move the platform if the platform is behind the camera/outside of the cameras view frustum
     /// </summary>
     public bool CheckPosition()
     {

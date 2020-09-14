@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-
+    /// <summary>
+    /// cam - Main Camera/Gameplay camera
+    /// speed - speed the camera moves
+    /// </summary>
     public Camera cam;
     public int speed = 10;
 
-    // Update is called once per frame
+    /// <summary>
+    /// Simple code to move the camera forward to demonstrate the endless scene
+    /// </summary>
     void Update()
     {
         if (Input.GetKey(KeyCode.W))
