@@ -12,7 +12,7 @@ Documentation: https://docs.lunalabs.io/
 
 Community forum: https://community.lunalabs.io/
 
-## Samples Index
+<h2>Samples Index</h2>
 
 **Luna Essentials** - Endcard UI / Particle pack, tutorial animations, Localisation scripts.
 
