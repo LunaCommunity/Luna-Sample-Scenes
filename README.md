@@ -1,4 +1,4 @@
-# Luna-Samples
+# Luna Samples Scenes
 
 In this repository Luna provides sample scenes that can be used in the Playable creation process.
 
